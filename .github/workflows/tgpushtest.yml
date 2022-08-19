@@ -128,7 +128,9 @@ jobs:
       run: |
       cd openwrt/bin/targets/*/*
       tar cvzf newifi3.tar.gz *
-      curl -F document=@"newifi3.tar.gz" -H "Content-Type:multipart/form-data" "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendDocument?chat_id=${{ secrets.TELEGRAM_CHAT_ID }}"    - name: Upload firmware directory
+      curl -F document=@"newifi3.tar.gz" -H "Content-Type:multipart/form-data" "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendDocument?chat_id=${{ secrets.TELEGRAM_CHAT_ID }}"
+
+    - name: Upload firmware directory
       uses: actions/upload-artifact@main
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
