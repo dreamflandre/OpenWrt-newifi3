@@ -45,7 +45,7 @@ jobs:
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
-        curl -k --data chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" --data "text=开始编译" "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage"
+        curl -k --data chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" --data "text=检测到lede更新，开始编译" "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage"
         sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
         sudo -E apt-get -qq update
         sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-2004)
