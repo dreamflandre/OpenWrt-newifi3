@@ -128,6 +128,7 @@ jobs:
       run: |
         cd openwrt/bin/targets/*/*
         tar cvzf newifi3.tar.gz *
+        curl -k --data chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" --data "text=$(cat sha256sums)" "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage"
         curl -F document=@"newifi3.tar.gz" -H "Content-Type:multipart/form-data" "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendDocument?chat_id=${{ secrets.TELEGRAM_CHAT_ID }}"
 
     - name: Upload firmware directory
