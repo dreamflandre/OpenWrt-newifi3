@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Telegram push Test
+name: build-openwrt
 
 on:
   repository_dispatch:
