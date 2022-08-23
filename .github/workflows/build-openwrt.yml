@@ -137,8 +137,9 @@ jobs:
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
         cd openwrt/bin/targets/*/*
-        tar cvzf newifi3_$(date +"%Y%m%d").tar.gz *
-        curl -F document=@"newifi3_$(date +"%Y%m%d").tar.gz" -H "Content-Type:multipart/form-data" "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendDocument?chat_id=${{ secrets.TELEGRAM_CHAT_ID }}"
+        echo "FILE_DATE=_$(date +"%Y%m%d%H%M")" >> $GITHUB_ENV
+        tar cvzf newifi3${{ env.FILE_DATE }}.tar.gz *
+        curl -F document=@"newifi3${{ env.FILE_DATE }}.tar.gz" -H "Content-Type:multipart/form-data" "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendDocument?chat_id=${{ secrets.TELEGRAM_CHAT_ID }}"
         curl -k --data chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" --data "text=$(cat sha256sums)" "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage"
 #    - name: Upload firmware directory
 #      uses: actions/upload-artifact@main
