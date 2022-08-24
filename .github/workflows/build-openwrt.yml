@@ -143,8 +143,8 @@ jobs:
         curl -k --data chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" --data "text=$(cat sha256sums)" "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage"
         
 
-    - name: update file and push to remote
-      id: push
+    - name: commit
+      id: commit
       run: |
         cp openwrt/bin/targets/*/*/*.buildinfo buildinfo
         cp openwrt/bin/targets/*/*/sha256sums buildinfo
@@ -153,8 +153,12 @@ jobs:
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
         git add buildinfo
-        git commit -m "autobuild"
-        git push
+        git commit -m "autobuild${{ env.FILE_DATE }}"
+        
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+         github_token: ${{ secrets.GITHUB_TOKEN }}
 #    - name: Upload firmware directory
 #      uses: actions/upload-artifact@main
 #      if: steps.organize.outputs.status == 'success' && !cancelled()
