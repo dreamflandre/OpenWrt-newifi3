@@ -1,14 +1,14 @@
-base-files - 51-r4956-bcc2e4ab1
+base-files - 51-r4982-b18bb3efb
 block-mount - 2021-08-14-2e3aca29-1
 busybox - 1.35.0-4
 ca-bundle - 20210119-1
 ca-certificates - 20210119-1
 coremark - 2022-07-27-eefc986e-1
 curl - 7.83.1-1
-ddns-scripts - 2.7.8-3
+ddns-scripts - 2.7.8-5
 ddns-scripts_aliyun - 1.0.3-1
 ddns-scripts_dnspod - 1.0.2-1
-default-settings - 2-29
+default-settings - 2-30
 dnsmasq-full - 2.86-11
 dropbear - 2022.82-2
 etherwake - 1.09-5
