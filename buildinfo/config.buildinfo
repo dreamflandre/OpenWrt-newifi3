@@ -11,10 +11,13 @@ CONFIG_CCACHE=y
 CONFIG_PACKAGE_luci-app-smartdns=y
 CONFIG_PACKAGE_luci-app-uugamebooster=y
 # CONFIG_PACKAGE_luci-app-vlmcsd is not set
+CONFIG_PACKAGE_luci-app-watchcat=y
 CONFIG_PACKAGE_luci-i18n-smartdns-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-uugamebooster-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-watchcat-zh-cn=y
 CONFIG_PACKAGE_luci-theme-argon=y
 # CONFIG_PACKAGE_nlbwmon is not set
 CONFIG_PACKAGE_smartdns=y
 CONFIG_PACKAGE_uugamebooster=y
 # CONFIG_PACKAGE_vlmcsd is not set
+CONFIG_PACKAGE_watchcat=y

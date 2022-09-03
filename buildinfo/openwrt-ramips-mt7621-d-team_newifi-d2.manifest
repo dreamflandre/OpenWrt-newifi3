@@ -129,6 +129,7 @@ luci-app-turboacc - git-22.236.14286-082687d-1
 luci-app-upnp - git-22.236.14286-082687d-1
 luci-app-uugamebooster - 1.0-8
 luci-app-vsftpd - 1.0-3
+luci-app-watchcat - git-22.236.14286-082687d-1
 luci-app-wol - git-22.236.14286-082687d-1
 luci-base - git-22.236.14286-082687d-1
 luci-i18n-accesscontrol-zh-cn - 1-11
@@ -142,6 +143,7 @@ luci-i18n-turboacc-zh-cn - git-22.236.14286-082687d-1
 luci-i18n-upnp-zh-cn - git-22.236.14286-082687d-1
 luci-i18n-uugamebooster-zh-cn - 1.0-8
 luci-i18n-vsftpd-zh-cn - 1.0-3
+luci-i18n-watchcat-zh-cn - git-22.236.14286-082687d-1
 luci-i18n-wol-zh-cn - git-22.236.14286-082687d-1
 luci-lib-fs - 1.0-1
 luci-lib-ip - git-22.236.14286-082687d-1
@@ -180,6 +182,7 @@ urandom-seed - 3
 usign - 2020-05-23-f1f65026-1
 uugamebooster - v2.22.0-1
 vsftpd-alt - 3.0.5-1
+watchcat - 1-12
 wget-ssl - 1.21.2-1
 wireless-tools - 29-6
 wol - 0.7.1-3
