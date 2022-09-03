@@ -1,4 +1,4 @@
-base-files - 51-r4982-b18bb3efb
+base-files - 51-r4988-7f1871672
 block-mount - 2021-08-14-2e3aca29-1
 busybox - 1.35.0-4
 ca-bundle - 20210119-1
@@ -25,7 +25,7 @@ iptables-mod-tproxy - 1.8.7-1
 iwinfo - 2021-06-28-c9b1672f-3
 jshn - 2021-05-16-b14c4688-2
 jsonfilter - 2018-02-04-c7e938d6-1
-kernel - 5.4.203-1-d0bfd01147e1d5240365a78bb773adb0
+kernel - 5.4.203-1-85dfd38d5e42120b39675853631372c5
 kmod-asn1-decoder - 5.4.203-1
 kmod-crypto-acompress - 5.4.203-1
 kmod-crypto-aead - 5.4.203-1
@@ -63,6 +63,7 @@ kmod-mt7603e - 5.4.203+4.1.2.0-1
 kmod-mt76x2e - 5.4.203+3.0.5.0-1
 kmod-mtk-hnat - 5.4.203-1
 kmod-nf-conntrack - 5.4.203-1
+kmod-nf-conntrack-netlink - 5.4.203-1
 kmod-nf-conntrack6 - 5.4.203-1
 kmod-nf-flow - 5.4.203-1
 kmod-nf-ipt - 5.4.203-1
@@ -121,13 +122,14 @@ luci - git-22.236.14286-082687d-1
 luci-app-accesscontrol - 1-11
 luci-app-arpbind - 1-3
 luci-app-autoreboot - 1.0-8
+luci-app-ddns - 2.4.9-8
 luci-app-filetransfer - 1-2
 luci-app-firewall - git-22.236.14286-082687d-1
 luci-app-mtwifi - 1-8
-luci-app-smartdns - 1.2020.30-1
+luci-app-nlbwmon - git-22.236.14286-082687d-1
 luci-app-turboacc - git-22.236.14286-082687d-1
 luci-app-upnp - git-22.236.14286-082687d-1
-luci-app-uugamebooster - 1.0-8
+luci-app-vlmcsd - 1.0-6
 luci-app-vsftpd - 1.0-3
 luci-app-wol - git-22.236.14286-082687d-1
 luci-base - git-22.236.14286-082687d-1
@@ -135,12 +137,13 @@ luci-i18n-accesscontrol-zh-cn - 1-11
 luci-i18n-arpbind-zh-cn - 1-3
 luci-i18n-autoreboot-zh-cn - 1.0-8
 luci-i18n-base-zh-cn - git-22.236.14286-082687d-1
+luci-i18n-ddns-zh-cn - 2.4.9-8
 luci-i18n-filetransfer-zh-cn - 1-2
 luci-i18n-firewall-zh-cn - git-22.236.14286-082687d-1
-luci-i18n-smartdns-zh-cn - 1.2020.30-1
+luci-i18n-nlbwmon-zh-cn - git-22.236.14286-082687d-1
 luci-i18n-turboacc-zh-cn - git-22.236.14286-082687d-1
 luci-i18n-upnp-zh-cn - git-22.236.14286-082687d-1
-luci-i18n-uugamebooster-zh-cn - 1.0-8
+luci-i18n-vlmcsd-zh-cn - 1.0-6
 luci-i18n-vsftpd-zh-cn - 1.0-3
 luci-i18n-wol-zh-cn - git-22.236.14286-082687d-1
 luci-lib-fs - 1.0-1
@@ -150,12 +153,12 @@ luci-lib-nixio - git-22.236.14286-082687d-1
 luci-mod-admin-full - git-22.236.14286-082687d-1
 luci-newapi - git-22.236.14286-082687d-1
 luci-proto-ppp - git-22.236.14286-082687d-1
-luci-theme-argon - 1.0-2
 luci-theme-bootstrap - git-22.236.14286-082687d-1
 miniupnpd - 2.0.20170421-3
 mt_wifi - 1-2
 mtd - 26
 netifd - 2021-06-04-50381d0a-1
+nlbwmon - 2021-09-01-d82c910c-1
 openssl-util - 1.1.1q-1
 openwrt-keyring - 2022-03-25-62471e69-2
 opkg - 2021-06-13-1bf042dd-4
@@ -166,7 +169,6 @@ procd - 2021-08-13-9f233f55-1
 rpcd - 2021-07-13-1fa35765-1
 rpcd-mod-rrdns - 20170710
 shellsync - 0.2-2
-smartdns - 1.2022.37-1
 swconfig - 12
 ubi-utils - 2.1.2-1
 ubox - 2020-10-25-9ef88681-2
@@ -178,7 +180,7 @@ uhttpd - 2022-02-07-2f8b1360-1
 uhttpd-mod-ubus - 2022-02-07-2f8b1360-1
 urandom-seed - 3
 usign - 2020-05-23-f1f65026-1
-uugamebooster - v2.22.0-1
+vlmcsd - svn1113-3
 vsftpd-alt - 3.0.5-1
 wget-ssl - 1.21.2-1
 wireless-tools - 29-6
