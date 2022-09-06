@@ -149,6 +149,7 @@ jobs:
         cp openwrt/bin/targets/*/*/*.buildinfo buildinfo
         cp openwrt/bin/targets/*/*/sha256sums buildinfo
         cp openwrt/bin/targets/*/*/*.manifest buildinfo
+        cp openwrt/bin/targets/*/*/*squashfs-sysupgrade.bin buildinfo
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
