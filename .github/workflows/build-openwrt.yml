@@ -147,7 +147,7 @@ jobs:
       id: commit
       run: |
         cp openwrt/bin/targets/*/*/*.buildinfo buildinfo
-        #cp openwrt/bin/targets/*/*/sha256sums buildinfo
+        cp openwrt/bin/targets/*/*/sha256sums buildinfo
         cp openwrt/bin/targets/*/*/*.manifest buildinfo
         #cp openwrt/bin/targets/*/*/*squashfs-sysupgrade.bin buildinfo
         git config --global user.name "github-actions[bot]"
@@ -186,11 +186,15 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "::set-output name=release_tag::$(cat openwrt/bin/targets/*/*/version.buildinfo)"
+        echo "::set-output name=release_tag::$(date +"%Y.%m.%d-%H%M")"
         touch release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
         [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
         echo "::set-output name=status::success"
+        cd openwrt/bin/targets/*/*/
+        [ -e newifi3${{ env.FILE_DATE }}.tar.gz ] && rm -rf newifi3${{ env.FILE_DATE }}.tar.gz
+        mv openwrt-ramips-mt7621-d-team_newifi-d2-squashfs-sysupgrade.bin lede-newifid2-$(cat sha256sums | grep sysupgrade | cut -c1-8)-$(cat version.buildinfo).bin
+        
     - name: Upload firmware to release
       uses: softprops/action-gh-release@v1
       if: steps.tag.outputs.status == 'success' && !cancelled()
