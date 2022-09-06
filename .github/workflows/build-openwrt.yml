@@ -30,7 +30,7 @@ env:
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
   UPLOAD_WETRANSFER: false
-  UPLOAD_RELEASE: false
+  UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
 jobs:
@@ -147,9 +147,9 @@ jobs:
       id: commit
       run: |
         cp openwrt/bin/targets/*/*/*.buildinfo buildinfo
-        cp openwrt/bin/targets/*/*/sha256sums buildinfo
+        #cp openwrt/bin/targets/*/*/sha256sums buildinfo
         cp openwrt/bin/targets/*/*/*.manifest buildinfo
-        cp openwrt/bin/targets/*/*/*squashfs-sysupgrade.bin buildinfo
+        #cp openwrt/bin/targets/*/*/*squashfs-sysupgrade.bin buildinfo
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
@@ -182,24 +182,24 @@ jobs:
 #        ./transfer wet -s -p 16 --no-progress ${FIRMWARE} 2>&1 | tee wetransfer.log
 #        echo "::warning file=wetransfer.com::$(cat wetransfer.log | grep https)"
 #        echo "::set-output name=url::$(cat wetransfer.log | grep https | cut -f3 -d" ")"
-#    - name: Generate release tag
-#      id: tag
-#      if: env.UPLOAD_RELEASE == 'true' && !cancelled()
-#      run: |
-#        echo "::set-output name=release_tag::$(date +"%Y.%m.%d-%H%M")"
-#        touch release.txt
-#        [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
-#        [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
-#        echo "::set-output name=status::success"
-#    - name: Upload firmware to release
-#      uses: softprops/action-gh-release@v1
-#      if: steps.tag.outputs.status == 'success' && !cancelled()
-#      env:
-#        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#      with:
-#        tag_name: ${{ steps.tag.outputs.release_tag }}
-#        body_path: release.txt
-#        files: ${{ env.FIRMWARE }}/*
+    - name: Generate release tag
+      id: tag
+      if: env.UPLOAD_RELEASE == 'true' && !cancelled()
+      run: |
+        echo "::set-output name=release_tag::$(date +"%Y.%m.%d-%H%M")"
+        touch release.txt
+        [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
+        [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
+        echo "::set-output name=status::success"
+    - name: Upload firmware to release
+      uses: softprops/action-gh-release@v1
+      if: steps.tag.outputs.status == 'success' && !cancelled()
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.tag.outputs.release_tag }}
+        body_path: release.txt
+        files: ${{ env.FIRMWARE }}/*
 
     - name: Delete workflow runs
       uses: GitRML/delete-workflow-runs@main
