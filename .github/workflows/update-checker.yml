@@ -18,7 +18,7 @@ env:
 on:
   workflow_dispatch:
   schedule:
-    - cron: 0 0 * * *
+    - cron: 0 1 * * *
 
 jobs:
   check:
@@ -43,6 +43,7 @@ jobs:
       if: steps.cacheHash.outputs.cache-hit != 'true'
       run: |
         echo ${{ steps.getHash.outputs.commitHash }} | tee .commitHash
+        curl -k --data chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" --data "text=检测到源码变动开始编译" "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage"
 
     - name: Trigger build
       if: steps.cacheHash.outputs.cache-hit != 'true'
