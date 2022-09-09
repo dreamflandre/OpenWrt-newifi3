@@ -1,4 +1,4 @@
-base-files - 51-r5007-261968b99
+base-files - 51-r5018-0321612a8
 block-mount - 2021-08-14-2e3aca29-1
 busybox - 1.35.0-4
 ca-bundle - 20210119-1
@@ -90,7 +90,7 @@ libbpf0 - 5.11.16-1
 libc - 1.2.3-3
 libcurl4 - 7.83.1-1
 libelf1 - 0.187-1
-libgcc1 - 8.4.0-3
+libgcc1 - 11.3.0-3
 libip4tc2 - 1.8.7-1
 libip6tc2 - 1.8.7-1
 libipset13 - 7.15-1
