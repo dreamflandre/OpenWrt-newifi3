@@ -1,4 +1,4 @@
-base-files - 51-r5025-e101ec490
+base-files - 51-r5032-771d6973a
 block-mount - 2021-08-14-2e3aca29-1
 busybox - 1.35.0-4
 ca-bundle - 20210119-1
@@ -8,7 +8,7 @@ ddns-scripts - 2.7.8-5
 ddns-scripts_aliyun - 1.0.3-1
 ddns-scripts_dnspod - 1.0.2-1
 default-settings - 2-30
-dnsmasq-full - 2.86-11
+dnsmasq-full - 2.86-12
 dropbear - 2022.82-2
 etherwake - 1.09-5
 firewall - 2022-02-17-4cd7d4f3-1
@@ -152,7 +152,7 @@ luci-newapi - git-22.254.18307-f40a385-1
 luci-proto-ppp - git-22.254.18307-f40a385-1
 luci-theme-argon - 1.0-2
 luci-theme-bootstrap - git-22.254.18307-f40a385-1
-miniupnpd - 2.0.20170421-3
+miniupnpd - 2.0.20170421-5
 mt_wifi - 1-2
 mtd - 26
 netifd - 2021-06-04-50381d0a-1
