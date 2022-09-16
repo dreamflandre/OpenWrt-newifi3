@@ -1,4 +1,4 @@
-base-files - 51-r5064-4a2ff4b1c
+base-files - 51-r5077-176c77d7e
 block-mount - 2021-08-14-2e3aca29-1
 busybox - 1.35.0-4
 ca-bundle - 20210119-1
@@ -88,7 +88,7 @@ kmod-usb-xhci-hcd - 5.4.203-1
 kmod-usb-xhci-mtk - 5.4.203-1
 kmod-usb3 - 5.4.203-1
 libblobmsg-json20210516 - 2021-05-16-b14c4688-2
-libbpf0 - 5.11.16-1
+libbpf20220308 - 2022-03-08-04c465fd-1
 libc - 1.2.3-3
 libcurl4 - 7.83.1-1
 libelf1 - 0.187-1
