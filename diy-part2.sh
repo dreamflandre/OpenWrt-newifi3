@@ -17,4 +17,4 @@
 sed -i '/luci.main.lang/a uci set luci.main.mediaurlbase=/luci-static/argon' package/lean/default-settings/files/zzz-default-settings
 sed -i '/luci.main.lang/a uci set luci.themes.Argon=/luci-static/argon' package/lean/default-settings/files/zzz-default-settings
 sed -i '/firewall.user/d' package/lean/default-settings/files/zzz-default-settings
-echo 'sh /etc/firstboot' >> package/lean/default-settings/files/zzz-default-settings
+echo 'sh /etc/firstboot.sh' >> package/lean/default-settings/files/zzz-default-settings
