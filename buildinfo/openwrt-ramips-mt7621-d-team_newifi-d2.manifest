@@ -1,9 +1,9 @@
-base-files - 51-r5077-176c77d7e
+base-files - 51-r5078-40de02bf8
 block-mount - 2021-08-14-2e3aca29-1
 busybox - 1.35.0-4
 ca-bundle - 20210119-1
 ca-certificates - 20210119-1
-curl - 7.83.1-1
+curl - 7.85.0-1
 ddns-scripts - 2.7.8-5
 ddns-scripts_aliyun - 1.0.3-1
 ddns-scripts_dnspod - 1.0.2-1
@@ -90,7 +90,7 @@ kmod-usb3 - 5.4.203-1
 libblobmsg-json20210516 - 2021-05-16-b14c4688-2
 libbpf20220308 - 2022-03-08-04c465fd-1
 libc - 1.2.3-3
-libcurl4 - 7.83.1-1
+libcurl4 - 7.85.0-1
 libelf1 - 0.187-1
 libgcc1 - 8.4.0-3
 libip4tc2 - 1.8.7-1
@@ -155,7 +155,7 @@ luci-newapi - git-22.255.14339-1ee6726-1
 luci-proto-ppp - git-22.255.14339-1ee6726-1
 luci-theme-argon - 1.0-2
 luci-theme-bootstrap - git-22.255.14339-1ee6726-1
-miniupnpd - 2.0.20170421-5
+miniupnpd - 2.0.20170421-3
 mt_wifi - 1-2
 mtd - 26
 netifd - 2021-06-04-50381d0a-1
