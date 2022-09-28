@@ -31,6 +31,7 @@ env:
   UPLOAD_COWTRANSFER: false
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: true
+  CACHE_BOOSTER: true
   TZ: Asia/Shanghai
 
 jobs:
@@ -63,6 +64,7 @@ jobs:
     
     - name: Cache
       uses: klever1988/cachewrtbuild@main
+      if: env.CACHE_BOOSTER == 'true' && !cancelled()
       with:
         ccache: 'true'
         prefix: ${{ github.workspace }}/openwrt
@@ -98,7 +100,7 @@ jobs:
       id: package
       run: |
         cd openwrt
-        echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config
+        [ $CACHE_BOOSTER == true ] && echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config
         make defconfig
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
