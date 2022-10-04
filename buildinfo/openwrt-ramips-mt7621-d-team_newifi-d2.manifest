@@ -1,4 +1,4 @@
-base-files - 52-r5196-7626542dc
+base-files - 52-r5209-758af54df
 block-mount - 2021-08-14-2e3aca29-1
 busybox - 1.35.0-4
 ca-bundle - 20210119-1
@@ -22,7 +22,7 @@ iptables-mod-extra - 1.8.7-1
 iptables-mod-fullconenat - 2022-02-13-108a36cb-6
 iptables-mod-tproxy - 1.8.7-1
 iwinfo - 2021-06-28-c9b1672f-3
-jshn - 2021-05-16-b14c4688-2
+jshn - 2021-11-04-c86a894e-2
 jsonfilter - 2018-02-04-c7e938d6-1
 kernel - 5.4.215-1-e25e9e1bffa47bf3fae35ee420b457c3
 kmod-asn1-decoder - 5.4.215-1
@@ -87,7 +87,7 @@ kmod-usb-ledtrig-usbport - 5.4.215-1
 kmod-usb-xhci-hcd - 5.4.215-1
 kmod-usb-xhci-mtk - 5.4.215-1
 kmod-usb3 - 5.4.215-1
-libblobmsg-json20210516 - 2021-05-16-b14c4688-2
+libblobmsg-json20211104 - 2021-11-04-c86a894e-2
 libbpf20220308 - 2022-03-08-04c465fd-1
 libc - 1.2.3-3
 libcurl4 - 7.85.0-1
@@ -99,16 +99,16 @@ libipset13 - 7.15-1
 libiwinfo-lua - 2021-06-28-c9b1672f-3
 libiwinfo20210430 - 2021-06-28-c9b1672f-3
 libjson-c5 - 0.15-2
-libjson-script20210516 - 2021-05-16-b14c4688-2
+libjson-script20211104 - 2021-11-04-c86a894e-2
 liblua5.1.5 - 5.1.5-9
 libmnl0 - 1.0.5-1
-libnl-tiny1 - 2021-11-21-8e0555fb-1
+libnl-tiny2022-05-23 - 2022-05-23-28c44ca9-1
 libopenssl-conf - 1.1.1q-1
 libopenssl1.1 - 1.1.1q-1
 libpcre - 8.44-4
 libpthread - 1.2.3-3
 librt - 1.2.3-3
-libubox20210516 - 2021-05-16-b14c4688-2
+libubox20211104 - 2021-11-04-c86a894e-2
 libubus-lua - 2021-06-03-a8cf6782-2
 libubus20210603 - 2021-06-03-a8cf6782-2
 libuci-lua - 2021-04-14-4b3db117-5
@@ -165,8 +165,8 @@ opkg - 2021-06-13-1bf042dd-4
 pdnsd-alt - 1.2.9b-par-3
 ppp - 2.4.9.git-2021-01-04-6
 ppp-mod-pppoe - 2.4.9.git-2021-01-04-6
-procd - 2021-08-13-9f233f55-1
-rpcd - 2021-07-13-1fa35765-2
+procd - 2021-11-04-0ee8e734-1
+rpcd - 2022-05-31-1c482573-2
 rpcd-mod-rrdns - 20170710
 shellsync - 0.2-2
 smartdns - 1.2022.38-1
@@ -177,8 +177,8 @@ ubus - 2021-06-03-a8cf6782-2
 ubusd - 2021-06-03-a8cf6782-2
 uci - 2021-04-14-4b3db117-5
 uclient-fetch - 2021-05-14-6a6011df-1
-uhttpd - 2022-02-07-2f8b1360-1
-uhttpd-mod-ubus - 2022-02-07-2f8b1360-1
+uhttpd - 2022-06-01-d59d732a-1
+uhttpd-mod-ubus - 2022-06-01-d59d732a-1
 urandom-seed - 3
 usign - 2020-05-23-f1f65026-1
 uugamebooster - v2.24.12-1
