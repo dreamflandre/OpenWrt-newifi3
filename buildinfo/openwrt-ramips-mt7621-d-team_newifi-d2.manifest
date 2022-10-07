@@ -1,4 +1,4 @@
-base-files - 52-r5215-46121523c
+base-files - 52-r5217-3929a9889
 block-mount - 2021-08-14-2e3aca29-1
 busybox - 1.35.0-4
 ca-bundle - 20210119-1
@@ -8,7 +8,7 @@ ddns-scripts - 2.7.8-5
 ddns-scripts_aliyun - 1.0.3-1
 ddns-scripts_dnspod - 1.0.2-1
 default-settings - 2-30
-dnsmasq-full - 2.86-12
+dnsmasq-full - 2.86-13
 dropbear - 2022.82-2
 etherwake - 1.09-5
 firewall - 2022-02-17-4cd7d4f3-1
