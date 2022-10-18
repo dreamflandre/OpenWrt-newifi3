@@ -1,4 +1,4 @@
-base-files - 52-r5238-37c134045
+base-files - 52-r5245-1f89c35a4
 block-mount - 2021-08-14-2e3aca29-1
 busybox - 1.35.0-4
 ca-bundle - 20210119-1
@@ -182,7 +182,7 @@ uhttpd - 2022-06-01-d59d732a-1
 uhttpd-mod-ubus - 2022-06-01-d59d732a-1
 urandom-seed - 3
 usign - 2020-05-23-f1f65026-1
-uugamebooster - v2.24.12-1
+uugamebooster - v3.0.4-1
 vsftpd-alt - 3.0.5-1
 wget-ssl - 1.21.2-1
 wireless-tools - 29-6
