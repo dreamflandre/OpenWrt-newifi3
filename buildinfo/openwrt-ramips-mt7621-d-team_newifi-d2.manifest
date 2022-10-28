@@ -117,6 +117,7 @@ libuci20130104 - 2021-04-14-4b3db117-5
 libuclient20201210 - 2021-05-14-6a6011df-1
 libustream-openssl20201210 - 2022-01-16-868fd881-1
 libuuid1 - 2.38-1
+libuv1 - 1.44.1-1
 libxtables12 - 1.8.7-1
 logd - 2020-10-25-9ef88681-2
 lua - 5.1.5-9
@@ -127,6 +128,7 @@ luci-app-autoreboot - 1.0-8
 luci-app-filetransfer - 1-2
 luci-app-firewall - git-22.289.58375-2a380a3-1
 luci-app-mtwifi - 1-8
+luci-app-netdata - 1.0-3
 luci-app-smartdns - 1.2022.38-1
 luci-app-turboacc - git-22.289.58375-2a380a3-1
 luci-app-upnp - git-22.289.58375-2a380a3-1
@@ -141,6 +143,7 @@ luci-i18n-autoreboot-zh-cn - 1.0-8
 luci-i18n-base-zh-cn - git-22.289.58375-2a380a3-1
 luci-i18n-filetransfer-zh-cn - 1-2
 luci-i18n-firewall-zh-cn - git-22.289.58375-2a380a3-1
+luci-i18n-netdata-zh-cn - 1.0-3
 luci-i18n-smartdns-zh-cn - 1.2022.38-1
 luci-i18n-turboacc-zh-cn - git-22.289.58375-2a380a3-1
 luci-i18n-upnp-zh-cn - git-22.289.58375-2a380a3-1
@@ -159,6 +162,7 @@ luci-theme-bootstrap - git-22.289.58375-2a380a3-1
 miniupnpd - 2.0.20170421-3
 mt_wifi - 1-2
 mtd - 26
+netdata - 1.33.1-1
 netifd - 2021-06-04-50381d0a-1
 openssl-util - 1.1.1q-1
 openwrt-keyring - 2022-03-25-62471e69-2
