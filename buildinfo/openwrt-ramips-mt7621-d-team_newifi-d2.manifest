@@ -1,4 +1,4 @@
-base-files - 52-r5330-9993b3225
+base-files - 52-r5336-d05fbef76
 block-mount - 2021-08-14-2e3aca29-2
 busybox - 1.35.0-4
 ca-bundle - 20210119-1
@@ -12,6 +12,7 @@ dnsmasq-full - 2.86-13
 dropbear - 2022.82-2
 etherwake - 1.09-5
 firewall - 2022-02-17-4cd7d4f3-1
+fping - 5.0-1
 fstools - 2021-08-14-2e3aca29-2
 fwtool - 2019-11-12-8f7fe925-1
 getrandom - 2020-10-25-9ef88681-2
