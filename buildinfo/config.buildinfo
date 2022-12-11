@@ -3,6 +3,7 @@ CONFIG_TARGET_ramips_mt7621=y
 CONFIG_TARGET_ramips_mt7621_DEVICE_d-team_newifi-d2=y
 CONFIG_DEVEL=y
 CONFIG_CCACHE=y
+# CONFIG_JSON_OVERVIEW_IMAGE_INFO is not set
 # CONFIG_LIBCURL_NGHTTP2 is not set
 CONFIG_PACKAGE_badblocks=y
 # CONFIG_PACKAGE_coremark is not set
