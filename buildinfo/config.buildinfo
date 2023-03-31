@@ -5,6 +5,7 @@ CONFIG_DEVEL=y
 CONFIG_CCACHE=y
 # CONFIG_JSON_OVERVIEW_IMAGE_INFO is not set
 # CONFIG_LIBCURL_NGHTTP2 is not set
+# CONFIG_LIBCURL_UNIX_SOCKETS is not set
 CONFIG_PACKAGE_badblocks=y
 # CONFIG_PACKAGE_coremark is not set
 # CONFIG_PACKAGE_dnsmasq_full_dhcpv6 is not set
